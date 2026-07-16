@@ -1,28 +1,47 @@
-# Dcat Admin
+# Dcatplus Admin
 
-> 首发 - https://learnku.com/articles/42582
+`Dcatplus Admin` 沿用 Dcat admin 最新代码，是其基础上再次更新，增加组件，丰富功能，优化代码，修正问题，让其保持活力。
 
 `Dcat Admin`是一个基于[laravel-admin](https://www.laravel-admin.org/)二次开发而成的后台系统构建工具，只需很少的代码即可快速构建出一个功能完善的高颜值后台系统。支持页面一键生成CURD代码，内置丰富的后台常用组件，开箱即用，让开发者告别冗杂的HTML代码，对后端开发者非常友好。
 
-- [官方网站](http://www.dcatadmin.com)
-- [English documentions](http://www.dcatadmin.com/docs/en-2.x/quick-start.html)
-- [Demo / 在线演示](http://103.39.211.179:8080/admin)
-- [Demo源码](https://github.com/jqhph/dcat-admin-demo)
-- [Demo源码 (码云)](https://gitee.com/jqhph/dcat-admin-demo)
-- [扩展](#)
+- [官方网站](https://dcat-admin.com)
+- [中文文档](https://dcat-admin.com)
+- [github](https://github.com/ycookies/dcat-plus-admin)
+- [Demo/在线演示](https://laravel12.dcat-admin.com/admin)
+- [示例源码](https://github.com/ycookies/dcatplus-demo)
+- [技术社区](https://forum.saishiyun.net/t/dcat-admin)
 
+### 现在的开源维护作者 杨光
+> 可加作者微信:Q3664839, 加入 dcat-admin 开发交流群。
+
+![](/guide/images/xc-img3.png)
+
+### 赞助者名单(赞助开源，才能让Dcat-plus开源走的更远)
+> 再次感谢以下人员对Dcat-plus开源赞助
+- Levies 200元
+- 香港小波 500元
+- Feryice 66.66元
+- 匿名人士 自建云服务器一台
+- 丝路 200元
+- Brian.C 100元
+- andyzu 88.88元
+- CyberLink 100元
+- 杜*勇 100元
+- 王*旻 500元
+- e*ZO 200元
 ### 截图
-![](guide/images/jietu/Oam6CYOobf.jpeg)
+![](/guide/images/jietu/Oam6CYOobf.jpeg)
 
-![](guide/images/jietu/bBd7mGA1Pj.jpg)
+![](/guide/images/jietu/bBd7mGA1Pj.jpg)
 
-![](guide/images/jietu/gC6pzUWN73.jpg)
+![](/guide/images/jietu/gC6pzUWN73.jpg)
 
-![](guide/images/jietu/35KJXfVXib.png)
+![](/guide/images/jietu/35KJXfVXib.png)
 
-![](guide/images/jietu/Lu7LZDSX0M.jpg)
+![](/guide/images/jietu/Lu7LZDSX0M.jpg)
 
-![](guide/images/jietu/fjSNhbtg6f.png)
+![](/guide/images/jietu/fjSNhbtg6f.png)
+
 
 
 ### 技术栈
@@ -105,11 +124,11 @@
 
 ### 交流
 
-**QQ群** 
-一群 704661955 (已满)
-二群 615467299
+**微信交流群** 
 
-**扩展开发者QQ群** 679738409 (有意开发扩展的同学可以加这个群交流，开发完成之后可以上报给我，我会把扩展包收录到官网，可以让更多开发者看到。)
+加微信：Q3664839,拉你入群
+
+**扩展开发者微信交流群 加微信：Q3664839（dcat 扩展开发） (有意开发扩展的同学可以加这个群交流，开发完成之后可以上报给我，我会把扩展包收录到官网，可以让更多开发者看到。)
 
 ### 加入我们
 
