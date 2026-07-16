@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="/docsify/assets/vue.css">
+    <link rel="stylesheet" href="/docsify/assets/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css">-->
+    <title>dcat-admin基于Laravel和Bootstrap的极速后台开发框架</title>
+    <link rel="stylesheet" href="guide/css/vue.css">
+    <link rel="stylesheet" href="guide/css/sidebar.min.css"/>
+    <link rel="stylesheet" href="guide/css/docsify-darklight-theme.min.css"/>
+    <link rel="stylesheet" href="guide/css/prism-okaidia.css">
+
+    <!--<link
+            rel="stylesheet"
+            media="(prefers-color-scheme: dark)"
+            href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+            rel="stylesheet"
+            media="(prefers-color-scheme: light)"
+            href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <link rel="stylesheet" href="/docsify/assets/main.css">-->
+    <style>
+        :root {
+            --docsifytabs-border-color: #ededed;
+            --docsifytabs-tab-highlight-color: purple;
+        }
+        img{
+            margin-bottom: 10px;
+            box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important
+        }
+        .app-name-link img{
+            box-shadow:none !important;
+        }
+        .sidebar .sidebar-nav{
+            padding-left: 20px !important;
+        }
+        .app-name-link img{
+           width: 12rem;
+        }
+        /* 自定义代码块样式 */
+        pre {
+            background-color: #2d2d2d !important;
+            color: #f8f8f2 !important;
+            border-radius: 5px !important;
+        }
+        pre code {
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+            background-color: #2d2d2d !important;
+            color: #f8f8f2 !important;
+            padding: 10px !important;
+            border-radius: 5px !important;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+        .FormattedBanner .container,.IndexPage .container{background-color:#ffffff;border-radius:5px}
+.FormattedBanner{background:transparent !important}
+.FormattedBanner .container {padding-top: 10px !important;padding-bottom: 0px !important}
+.Hero{box-shadow:none !important}
+.AfruxWidgets-topWidgetSection, .AfruxWidgets-bottomWidgetSection{margin-top:0px !important}
+    </style>
+
+</head>
+<body>
+<div id="app">
+    Dcat-Admin 加载中...
+</div>
+
+<script>
+    window.$docsify = {
+        name: 'Dcatplus Admin 使用文档',
+        loadSidebar: true,
+        loadNavbar: true,
+        homepage: '1-入门/1-简介.md',
+        plugins: [
+            function pageFooter(hook, vm) {
+            var footer = [
+                '<hr/>',
+                '<footer>',
+                '<span><a href="https://www.dcat-admin.com/books/dcatplus-admin/#/">dcatplus-admin</a> &copy;2025.</span>',
+                '<span>Proudly published with <a href="https://beian.miit.gov.cn/" target="_blank">网站备案:浙ICP备14017126号-4</a>.</span>',
+                '</footer>',
+            ].join('');
+
+            hook.afterEach(function (html) {
+                return html + footer;
+            });
+            },
+        ],
+        //repo: 'https://github.com/docsifyjs/docsify/', //会在页面右上角渲染一个 GitHub Corner 挂件
+        //自动显示标题
+        autoHeader: true,
+        //自动跳转到页面顶部
+        auto2top: true,
+        //小屏设备下合并导航栏到侧边栏
+        mergeNavbar: true,
+        coverpage: false,
+        cache: false,
+        //搜索插件
+        search: {
+            placeholder: '搜索试试',
+            noData: '没有结果！',
+        },
+        // 多语言配置
+        locales: {
+            '/en/': {
+                lang: 'en-US',
+                title: 'Documentation',
+                description: 'English documentation'
+            },
+            '/zh/': {
+                lang: 'zh-CN',
+                title: '文档',
+                description: '中文文档'
+            }
+        },
+
+        // 语言选择器配置
+        languageSelector: {
+            'en': 'English',
+            'zh': '中文'
+        },
+        subMaxLevel: 4,
+        copyCode: {
+            buttonText: {
+                '/zh-cn/': '点击复制',
+                '/ru/': 'Скопировать в буфер обмена',
+                '/de-de/': 'Klicken Sie zum Kopieren',
+                '/es/': 'Haga clic para copiar',
+                '/': '复制',
+            },
+            errorText: {
+                '/zh-cn/': '错误',
+                '/ru/': 'ошибка',
+                '/': 'Error',
+            },
+            successText: {
+                '/zh-cn/': '复制',
+                '/ru/': 'Скопировано',
+                '/de-de/': 'Kopiert',
+                '/es/': 'Copiado',
+                '/': '成功',
+            },
+        },
+        tabs: {
+            persist: true, // default
+            sync: true, // default
+            theme: 'classic', // default
+            tabComments: true, // default
+            tabHeadings: true // default
+        },
+        logo: '/guide/images/dcat-plus-logo.png',
+    }
+</script>
+<script src="guide/js/docsify.min.js"></script>
+<script src="guide/js/search.min.js"></script>
+<script src="guide/js/prism-java.min.js"></script>
+<script src="guide/js/emoji.min.js"></script>
+<script src="guide/js/zoom-image.min.js"></script>
+<script src="guide/js/docsify-copy-code.js"></script>
+<script src="guide/js/docsify-sidebar-collapse.min.js"></script>
+<script src="guide/js/docsify-plugin-flexible-alerts.js"></script>
+<script src="guide/js/vanilla-back-to-top.min.js"></script>
+<script src="guide/js/docsify-darklight-theme.js"></script>
+<script src="guide/js/prism-json.min.js"></script>
+<script src="guide/js/prism-bash.min.js"></script>
+<script src="guide/js/prism-php.min.js"></script>
+<script src="guide/js/prism-sql.min.js"></script>
+<script src="guide/js/prism-php-extras.min.js"></script>
+
+<!-- 回到顶部功能 -->
+<script>
+    addBackToTop({
+        diameter: 56,
+        backgroundColor: 'rgb(66, 185, 131)',
+        textColor: '#fff',
+    });
+</script>
+
+<!-- 实现离线化 -->
+<!--<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('pwa.js')
+    }
+</script>-->
+<!--
+<script src="/docsify/assets/docsify.min.js"></script>
+<script src="/docsify/assets/emoji.min.js"></script>
+<script src="/docsify/assets/docsify-copy-code.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+-->
+
+
+</body>
+</html>
